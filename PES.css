@@ -1,0 +1,170 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background-color: transparent; */
+  z-index: 100;
+}
+
+.logo{
+  width: 30%;
+  height: 15%;
+  margin-left: 7em;
+}
+
+#audio-player {
+  position: fixed;
+  width: 20%;
+}
+
+#audio-player button {
+  background-color: transparent;
+  color: transparent;
+  /* border: none;
+  font-size: 1.5em;
+  margin: 0 10px;
+  cursor: pointer; */
+}
+
+
+
+
+
+/* #audio-player::-webkit-media-controls-panel {
+  background-color: transparent;
+} */
+
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  background-color: #ffffff;
+  z-index: 100;
+  background-color: transparent;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 15%;
+  margin-left: 30%;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+nav li {
+  margin-left: 1em;
+}
+
+nav a {
+  color: #555;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+nav a:hover {
+  color: #00000050;
+}
+
+
+
+.bg-video {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100vh ;
+
+  /* height: calc(100% - 70px); Subtract the height of the header from the video height */
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  /* align-items: end; */
+  /* padding: 1em;
+  width: 95%;
+  height: 70%; */
+  z-index: 98;
+  margin: 20rem;
+}
+
+h1 {
+  text-align: center;
+  z-index: 100;
+  text-shadow: 2px 4px 10px hsla(125, 90%, 48%, 0.8);
+}
+
+
+
+.obj {
+/* margin-bottom: 10vh;
+margin-top:20vh; */
+margin-top: -8vh; 
+margin-bottom: 5vh;
+padding: 2vh; 
+background: linear-gradient(to bottom, #8B00FF, #00FF7F);
+}
+
+.target {
+  color: gold;
+  text-shadow: 0 0 5px #000000;
+  text-align: center
+  
+}
+
+.presentation {
+  height: 100vh;
+  display: flex;
+  }
+
+  .filrs{
+height: 10vh;
+width: 150vh;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+ div, aside, section, img, ul, nav, li, main, h1, h2 {
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
+ }
+
+/*visu bloc*/
+
+
+
+/* main {
+  width: 100%;
+  height: calc(100vh - 70px); 70px is the height of the header
+  margin-top: px; 
+} */
