@@ -112,38 +112,64 @@ h1 {
  
 }
 
+
+
 .presentation {
-  /* Ajustez cette valeur pour l'espacement entre la vidéo et le bloc "présentation" */
   margin-top: 5vh;
   height: 100vh;
-}
-
-/* Style pour les blocs d'intégration de réseaux sociaux */
-.social-column {
-  /* Ajoutez ici le style pour les blocs d'intégration de réseaux sociaux */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.social-column img {
-  width: 30%;
-  height: 50%;
-  margin: 10vh;
+.social-container {
+  display: flex;
+  justify-content: space-between; /* Aligne les blocs à gauche et à droite */
+  width: 80%;
+  margin-left: -150px;
+  margin-right: 10px;
 }
 
-.social-column a {
-  text-decoration: none;
-  color: #555;
-  font-size: 1.2em;
-  font-weight: bold;
+.social-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 80vh;
 }
 
-.social-column a:hover {
-  color: #00000050;
+.video-container {
+  border-radius: 10px; 
+  overflow: hidden; 
+  width: 312px; 
+  height: 572px; 
 }
 
-div, aside, section, img, ul, nav, li, main, h1, h2, .social-column {
+.social-column iframe {
+  width: 100%;
+  height: 100%; 
+}
+
+/* Styles pour la sidebar */
+.sidebar {
+  width: 20%; /* Ajustez la largeur de la sidebar selon vos besoins */
+  background-color: blue;
+  padding: 20px;
+  margin-left: auto; /* Déplace la sidebar le plus possible à droite */
+}
+
+/* Conteneur pour le main et la sidebar */
+.container-main-sidebar {
+  display: flex;
+  justify-content: space-between; /* Permet d'espacer les éléments (main et sidebar) sur la ligne */
+  align-items: flex-start; /* Aligne les éléments en haut de la ligne */
+}
+
+
+div, aside, section, img, ul, nav, li, main, h1, h2, .social-column, .social-container {
   border-color: red;
   border-style: solid;
   border-width: 2px;
