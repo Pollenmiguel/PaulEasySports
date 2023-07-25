@@ -124,6 +124,12 @@ h1 {
   flex-direction: row; /* Afficher les éléments côte à côte */
   justify-content: space-between; /* Répartir l'espace disponible entre les éléments */
   align-items: flex-start; /* Aligner les éléments en haut du conteneur */
+  border-color: gray;
+  border-style: solid;
+  border-width: 2px;
+  background-color: lightgrey;
+
+
   
 }
 
@@ -156,7 +162,7 @@ left: 10%;
   align-items: center;
   margin: 10px;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 2px solid grey;
   border-radius: 10px;
   height: 80vh;
   width: 40vh;
@@ -208,18 +214,16 @@ height:120%
   background-color: blue;
   padding: 10px;
 
- 
 }
 
 
-
-div, aside, section, img, ul, nav, li, main, h1, h2, .social-column, .social-container, .sport-info {
+/* div, aside, section, img, ul, nav, li, main, h1, h2, .social-column, .social-container, .sport-info {
   border-color: red;
   border-style: solid;
   border-width: 2px;
-}
+} */
 
-
+/* Styles pour les écrans plus petits */
 @media screen and (max-width: 767px) {
   .container {
     flex-direction: column; 
@@ -239,7 +243,7 @@ div, aside, section, img, ul, nav, li, main, h1, h2, .social-column, .social-con
 
   nav {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     margin-right: 5%;
     margin-left: 5%;
@@ -258,6 +262,47 @@ div, aside, section, img, ul, nav, li, main, h1, h2, .social-column, .social-con
     font-weight: bold;
   }
 
+  .container-main-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Pour centrer le bloc */
+    align-items: center; /* Pour centrer les éléments horizontalement */
+    max-width: 350px;
+    margin-left: 5%;
+    max-height: 200%;
+  }
 
+  .social-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 350px;
+  }
+
+  .social-column {
+    width: 90%; /* Ajustez la largeur selon vos besoins */
+    margin: 5px auto;
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    max-width: 350px;
+    max-height: 500px;
+  }
+
+  .video-container {
+    border-radius: 10px; 
+    overflow: hidden; 
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Pour conserver le rapport hauteur / largeur d'origine */
+  }
+
+  .sidebar {
+    width: 80%; /* Ajustez la largeur selon vos besoins */
+    margin-top: 200%;
+    padding: 10px;
+    background-color: blue;
+    order: 4;
+  }
 
 }
