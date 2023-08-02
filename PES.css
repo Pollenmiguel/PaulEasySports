@@ -234,30 +234,33 @@ iframe{
 
   footer {
 
-    background-color: aquamarine;
+    background-color: #007FFF;
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    /* text-align: center; */
-    margin: 2% 10% 10% 0%;
+    justify-content: space-around;
+    text-align: center;
+    margin: 2% 10% 0% 0%;
     height: 100%;
     width: 100%;
+    background: linear-gradient(to bottom, #8B00FF, #00FF7F);
+    color: white;
+
     
     }
 
   .notremission {
 
-    margin-left: 10%;
+    margin-left: 5%;
+    padding: 0% 10% 5% 10%;
    
   }
 
 
-  .contact{
+  .contact {
 
-    margin-right: 10%;
-
-
+    margin-right: 5%;
+    padding: 0% 10% 5% 10%; 
 
 
   }
