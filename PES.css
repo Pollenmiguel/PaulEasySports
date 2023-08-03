@@ -255,26 +255,42 @@ iframe{
   .notremission {
 
     margin-left: 5%;
-    padding: 0% 10% 5% 10%;
+    padding: 0% 7% 3% 7%;
+    border: 5px solid gold;
+    border-radius: 3px;
    
   }
 
 
   .Contact {
+    margin-left: 20%;
     margin-right: 5%;
-    padding: 0% 10% 5% 10%; /* Modifiez les valeurs de padding comme vous le souhaitez */
+    padding: 0% 7% 3% 7%; 
+    border: 5px solid gold;
+    border-radius: 3px;
   }
   
+  .youtube-paragraph {
+    margin-bottom: 1px; 
+  }
+  
+  .mail-paragraph {
+    margin-bottom: 8px; 
+  }
+  
+  .facebook-paragraph {
+
+    margin-bottom: 2px;
+  }
 
 
 
-
-
+/* 
 div, aside, section, img, ul, nav, li, main, h1, h2, .social-column, .social-container, .sport-info {
   border-color: red;
   border-style: solid;
   border-width: 2px;
-}
+} */
 
 /* Styles pour les écrans plus petits */
 @media screen and (max-width: 767px) {
