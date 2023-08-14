@@ -2,12 +2,18 @@ header {
   position: fixed;
   z-index: 100;
   width: 100%;
+  height: 15%;
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
   /* border: 4px solid gold; */
   margin: 0;
+  transition: height 0.3s; width: 0.3s;
 
- 
+ }
+
+ /* Ajoutez ce style CSS pour le header */
+header.expanding {
+  height: 10%; /* Hauteur réduite */
 
 
 }
@@ -44,18 +50,26 @@ header {
 }
 
 .logo {
-  width: 16%;  
+  width: 70%;  
+  /* height: 100%; */
   /* background: black; */
   border-radius: 5%;
 
-  margin: 0;
-  margin-right: 5%;
+  /* margin-right: 5%; */
+  margin-left: 10%;
+  transition: height 0.3s; width: 0.3s;
+}
+
+.logo.expanding {
+  width: 50%;
 }
 
 nav {
   display: flex;
   justify-content:space-around;
   align-items: center;
+  margin-right: 30%;
+  margin-top: 1.50%;
   /* padding: 10px; */
 }
 
@@ -259,6 +273,7 @@ iframe{
     width: 100%;
     background: linear-gradient(to bottom, #00FF7F,#8B00FF );
     color: white;
+    margin-top: 1%;
 
     
     }
@@ -280,11 +295,12 @@ iframe{
   .Contact {
     margin-left: 5%;
     margin-right: 10%;
+    margin-top: 2%;
     padding: 2% 2%; 
     border: 5px solid gold;
     border-radius: 3px;
     height: 70%;
-    margin-top: 2%;
+   
   }
   
   .youtube-paragraph {
@@ -303,14 +319,22 @@ iframe{
 
 
 
-div, aside, p, section, img, ul, nav, li, main, h1, h2, .social-column, .social-container, .sport-info, .container-main-sidebar, header, .logo {
+/* div, aside, p, section, img, ul, nav, li, main, h1, h2, .social-column, .social-container, .sport-info, .container-main-sidebar, header, .logo {
   border-color: red;
   border-style: solid;
   border-width: 2px;
-}
+} */
 
 /* Styles pour les écrans plus petits */
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 844px) {
+  
+  header {
+
+height: 25%;
+
+  }
+  
+  
   .container {
     display: flex;
     flex-direction: column; 
@@ -443,7 +467,7 @@ div, aside, p, section, img, ul, nav, li, main, h1, h2, .social-column, .social-
 
 
 /* Styles pour les écrans de moins de 801px en mode paysage */
-@media screen and (max-width: 801px) and (orientation: landscape) {
+@media screen and (max-width: 844px) and (orientation: landscape) {
   header {
     position: fixed;
     z-index: 100;
@@ -451,51 +475,77 @@ div, aside, p, section, img, ul, nav, li, main, h1, h2, .social-column, .social-
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
     margin: 0;
-    flex-direction: row;
-    align-items: center; /* Aligne les éléments à gauche */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajout d'espacement entre le logo et le menu */
+    padding: 0.5em 1em; /* Ajout de padding pour espacement interne */
   }
-
+  
   .container {
     display: flex;
-    justify-content: flex-start; /* Place le contenu à gauche */
-    align-items: center;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
     width: 100vw;
-    margin: 0;
+    margin: 4% 0;
   }
-
+  
   .logo {
-    margin-right: 0; /* Supprimez la marge droite */
-    margin-bottom: 1em; /* Ajoutez une marge en bas */
-    width: 20%;
-    align-self: flex-start; /* Ajoutez cette ligne pour aligner le logo à gauche */
+    margin-right: 0.5em; /* Ajout d'une légère marge droite */
+    margin-left: 0;
+    margin-bottom: 0.5em;
+    width: 25%;
+    align-self: flex-start;
   }
-
-
+  
   nav {
     margin: 0;
-    margin-top: -10% ;
+    margin-left: 0.5em; /* Ajout d'une légère marge gauche */
     align-self: flex-end;
-    align-items: flex-start;
-   
+  }
+  
+
+  .videobg {
+    height: 100vh;
+    width: 100%;
+    margin-bottom: -8em;
+    object-fit: cover;
+  }
+
+  .obj {
+    margin-top: 2vh;
+    margin-bottom: -15em;
+    padding: 2vh;
+    background: linear-gradient(to bottom, #8B00FF, #00FF7F);
+    border: 8px solid gold;
+    border-radius: 10px;
   }
 
   .container-main-sidebar {
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column; /* Modification de la direction pour afficher les éléments les uns en dessous des autres */
+    align-items: center; /* Aligner les éléments au centre */
+    width: auto;
     margin: 0;
   }
 
+  .presentation {
+    margin-top: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2%;
+  }
+
   .social-container {
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
+    flex-direction: column; /* Afficher les éléments en colonne */
+    align-items: center; /* Aligner les éléments au centre */
+    width: 100%;
   }
 
   .social-column {
-    width: 31%;
+    width: 100%;
+    margin: 1em 0; /* Ajout de marge verticale entre les colonnes */
   }
 
   .sidebar {

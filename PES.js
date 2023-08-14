@@ -1,14 +1,18 @@
-const audioPlayer = document.getElementById("audio-player");
-const playPauseIcon = document.getElementById("play-pause-icon");
+const header = document.querySelector("header");
+const logo = document.querySelector(".logo");
 
-function toggleAudio() {
-  if (audioPlayer.paused) {
-    audioPlayer.play();
-    playPauseIcon.classList.remove("bi-play-fill");
-    playPauseIcon.classList.add("bi-pause-fill");
-  } else {
-    audioPlayer.pause();
-    playPauseIcon.classList.remove("bi-pause-fill");
-    playPauseIcon.classList.add("bi-play-fill");
-  }
+function updateHeader() {
+    if (window.scrollY > 0) { // Changer ici pour inverser l'effet
+        header.classList.add("expanding");
+        logo.classList.add("expanding");
+    } else {
+        header.classList.remove("expanding");
+        logo.classList.remove("expanding");
+    }
 }
+
+// Appeler la fonction lors du chargement initial de la page
+updateHeader();
+
+// Ajouter un écouteur d'événement pour le défilement
+window.addEventListener("scroll", updateHeader);
