@@ -7,13 +7,13 @@ header {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
   /* border: 4px solid gold; */
   margin: 0;
-  transition: height 0.3s; width: 0.3s;
+  transition: height 0.1s; width: 0.1s;
 
  }
 
  /* Ajoutez ce style CSS pour le header */
 header.expanding {
-  height: 10%; /* Hauteur réduite */
+  height: 9.5%; /* Hauteur réduite */
 
 
 }
@@ -50,18 +50,18 @@ header.expanding {
 }
 
 .logo {
-  width: 70%;  
+  width: 85%;  
   /* height: 100%; */
   /* background: black; */
   border-radius: 5%;
 
   /* margin-right: 5%; */
   margin-left: 10%;
-  transition: height 0.3s; width: 0.3s;
+  transition: height 0.2s; width: 0.2s;
 }
 
 .logo.expanding {
-  width: 50%;
+  width: 55%;
 }
 
 nav {
@@ -69,7 +69,7 @@ nav {
   justify-content:space-around;
   align-items: center;
   margin-right: 30%;
-  margin-top: 1.50%;
+  margin-top: 0.5%;
   /* padding: 10px; */
 }
 
@@ -330,9 +330,16 @@ iframe{
   
   header {
 
-height: 25%;
+height: 26%;
 
   }
+  
+  header.expanding {
+    height: 16%; /* Hauteur réduite */
+  
+  
+  }
+
   
   
   .container {
@@ -345,15 +352,21 @@ height: 25%;
 
   .logo {
     margin-left: 0; 
-    margin-bottom: 1em; 
-    width: 50%;
+    /* margin-bottom: 0.1em;  */
+    width: 85%;
+    margin-top: 0.2em;
   }
 
-  #audio-player {
+  .logo.expanding {
+    width: 55%;
+  }
+
+
+  /* #audio-player {
     width: 100%; 
     bottom: 0; 
     left: 0; 
-  }
+  } */
 
   nav {
     display: flex;
@@ -361,9 +374,12 @@ height: 25%;
     align-items: center;
     margin-right: 5%;
     margin-left: 5%;
-    padding: 10px;
+    margin-top: -2%;
+    /* padding: 5px; */
   }
   
+
+
   nav li {
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -456,99 +472,138 @@ height: 25%;
       
       margin-right: 10%;
 
-
-
-    }
-
-
-
+}
 
 }
 
 
 /* Styles pour les écrans de moins de 801px en mode paysage */
 @media screen and (max-width: 844px) and (orientation: landscape) {
+  
   header {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ajout d'espacement entre le logo et le menu */
-    padding: 0.5em 1em; /* Ajout de padding pour espacement interne */
+    height: 40%;
   }
   
+  header.expanding {
+    height: 26%; /* Hauteur réduite */
+  }
+
   .container {
     display: flex;
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
+    justify-content: center; */
+    align-items: center;
     width: 100vw;
-    margin: 4% 0;
+    /* margin: 4% 0; */
   }
-  
+
+  .content {
+    position: absolute;
+    margin-top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 98;
+  }
+
   .logo {
-    margin-right: 0.5em; /* Ajout d'une légère marge droite */
-    margin-left: 0;
-    margin-bottom: 0.5em;
-    width: 25%;
-    align-self: flex-start;
+    /* margin-right: 0.5em; */
+    width: 50%;
+    margin-left: -65%;
+    /* align-self: flex-start; */
+    margin-top: 0.2em;
   }
-  
+
+  .logo.expanding {
+    width: 30%;
+  }
+
   nav {
-    margin: 0;
-    margin-left: 0.5em; /* Ajout d'une légère marge gauche */
-    align-self: flex-end;
-  }
   
-
-  .videobg {
-    height: 100vh;
-    width: 100%;
-    margin-bottom: -8em;
-    object-fit: cover;
+    margin-right: -40%;
+    /* Ajustez la marge supérieure ici pour aligner avec le logo */
+    margin-top: -8%
+    
   }
 
-  .obj {
-    margin-top: 2vh;
-    margin-bottom: -15em;
-    padding: 2vh;
-    background: linear-gradient(to bottom, #8B00FF, #00FF7F);
-    border: 8px solid gold;
-    border-radius: 10px;
+
+  nav li {
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+  }
+
+  nav a {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+
+  .DA {
+    margin-left: -18%;
   }
 
   .container-main-sidebar {
     display: flex;
-    flex-direction: column; /* Modification de la direction pour afficher les éléments les uns en dessous des autres */
-    align-items: center; /* Aligner les éléments au centre */
-    width: auto;
-    margin: 0;
-  }
-
-  .presentation {
-    margin-top: 5vh;
-    width: 100%;
-    display: flex;
     flex-direction: column;
+    margin: 0 auto;
     align-items: center;
-    margin-left: 2%;
+    max-width: 350px;
+    margin-left: 5%;
+    max-height: 200%;
   }
 
   .social-container {
-    flex-direction: column; /* Afficher les éléments en colonne */
-    align-items: center; /* Aligner les éléments au centre */
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
   }
 
   .social-column {
+    width: 90%;
+    margin: 5px auto;
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    /* max-width: 350px;
+    max-height: 500px; */
+  }
+
+  .video-container {
+    border-radius: 10px;
+    overflow: hidden;
     width: 100%;
-    margin: 1em 0; /* Ajout de marge verticale entre les colonnes */
+    height: auto;
   }
 
   .sidebar {
-    width: 31%;
+    width: 50%;
+    margin-top: 15%;
+    margin-left: 25%;
+    padding: 10px;
+    background-color: blue;
+    order: 4;
+  }
+
+  footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #00FF7F, #8B00FF);
+    color: white;
+    margin-top: 5%;
+  }
+
+  .Contact {
+    font-size: 10px;
+    width: 92%;
+    margin-right: 10%;
+  }
+
+  .notremission {
+    margin-right: 10%;
   }
 }
+

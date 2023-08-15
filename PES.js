@@ -1,6 +1,7 @@
 const header = document.querySelector("header");
 const logo = document.querySelector(".logo");
 
+
 function updateHeader() {
     if (window.scrollY > 0) { // Changer ici pour inverser l'effet
         header.classList.add("expanding");
