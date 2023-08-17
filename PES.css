@@ -393,7 +393,7 @@ height: 26%;
   }
 
   .bg-video{
-    max-height: 82%;
+    max-height: 81%;
     margin-top: 40%;
     margin-bottom: 10;
    
@@ -524,13 +524,13 @@ height: 100% ;
   }
 
   .logo {
-    width: 65%;
+    max-width: 75%;
     /* Vous pouvez ajuster la marge pour centrer verticalement */
     /* margin-top: 0.2em; */
   }
 
   .logo.expanding {
-    width: 40%;
+    max-width: 50%;
   }
 
   nav {
@@ -557,7 +557,7 @@ height: 100% ;
   }
 
   nav a {
-    font-size: 0.8em;
+    font-size: 1.1em;
     font-weight: bold;
   }
 
