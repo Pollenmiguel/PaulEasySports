@@ -318,8 +318,8 @@ iframe{
 
 
 
-
-/* div, aside, p, section, img, ul, nav, li, main, h1, h2, .social-column, .social-container, .sport-info, .container-main-sidebar, header, .logo {
+/* 
+div, aside, p, section, img, ul, nav, li, main, h1, h2, .social-column, .social-container, .sport-info, .container-main-sidebar, header, .logo, .presentation, .video-container {
   border-color: red;
   border-style: solid;
   border-width: 2px;
@@ -420,23 +420,31 @@ height: 26%;
   .social-column {
     width: 90%; /* Ajustez la largeur selon vos besoins */
     margin: 5px auto;
-    padding: 5px;
+    padding: 15px;
     border: 2px solid grey;
     border-radius: 10px;
     max-width: 350px;
-    max-height: 500px;
+    max-height: 400px;
   }
 
   .video-container {
     border-radius: 10px; 
     overflow: hidden; 
     width: 100%; /* Ajustez la largeur selon vos besoins */
-    height: auto; /* Pour conserver le rapport hauteur / largeur d'origine */
+    height: 100%; /* Pour conserver le rapport hauteur / largeur d'origine */
   }
+
+  iframe {
+
+width: 100%;
+height: 100% ;
+  }
+
 
   .sidebar {
     width: 80%; /* Ajustez la largeur selon vos besoins */
-    margin-top: 250%;
+    margin-top: 160%;
+    margin-bottom: 10% ;
     margin-left: 13%;
     padding: 10px;
     background-color: blue;
@@ -465,6 +473,8 @@ height: 26%;
       font-size: 10px;
       width: 92% ;
       margin-right: 10%;
+      margin-top: -10%;
+      margin-bottom: 10%;
       
     }
 
@@ -477,53 +487,54 @@ height: 26%;
 }
 
 
-/* Styles pour les écrans de moins de 801px en mode paysage */
 @media screen and (max-width: 844px) and (orientation: landscape) {
-  
   header {
-    height: 40%;
+    height: 42%;
+    position: fixed;
+    top:0%
+   
   }
   
   header.expanding {
-    height: 26%; /* Hauteur réduite */
+    height: 27%;
   }
 
   .container {
     display: flex;
-    justify-content: center; */
+    flex-direction: row; /* Ajout de flex-direction pour empiler les blocs */
+    /* justify-content: space-between;  */
     align-items: center;
     width: 100vw;
-    /* margin: 4% 0; */
-  }
-
-  .content {
-    position: absolute;
-    margin-top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 98;
+    padding: 1rem; /* Ajout de marges à gauche et à droite */
   }
 
   .logo {
-    /* margin-right: 0.5em; */
-    width: 50%;
-    margin-left: -65%;
-    /* align-self: flex-start; */
-    margin-top: 0.2em;
+    width: 65%;
+    /* Vous pouvez ajuster la marge pour centrer verticalement */
+    /* margin-top: 0.2em; */
   }
 
   .logo.expanding {
-    width: 30%;
+    width: 40%;
   }
 
   nav {
-  
-    margin-right: -40%;
-    /* Ajustez la marge supérieure ici pour aligner avec le logo */
-    margin-top: -8%
-    
+    /* Pas de changements ici */
+    flex: 1; /* Permet au menu de prendre l'espace restant */
+    display: flex;
+    justify-content: center; /* Aligner à droite */
+    align-items: center;
+    margin-left: 0.5rem; /* Légère marge à gauche */
+    margin-right: 2.5rem;
+    margin-top: 1.2%;
   }
 
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
 
   nav li {
     margin-left: 0.3em;
@@ -535,75 +546,157 @@ height: 26%;
     font-weight: bold;
   }
 
-  .DA {
-    margin-left: -18%;
+  .videobg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* margin-bottom: -70%; */
+    margin-top: 15%;
+  }
+
+  iframe{
+
+    height: 150%;
+    width: 100%;
+    border: 5% solid white;
+    border-radius: 3%;
+  }
+
+
+
+  .content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 98;
+    margin-top: 30%;
   }
 
   .container-main-sidebar {
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
-    max-width: 350px;
-    margin-left: 5%;
-    max-height: 200%;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start; 
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid gold;
+    background-color: blueviolet;
   }
-
+  
+  .presentation {
+    margin-top: 2vh;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 2%; */
+    max-width: 100%;
+  }
+  
+  .DA {
+    position: relative;
+    /* left: 10%; */
+    color: white;
+    text-shadow: 0 0 5px #000000;
+  }
+  
   .social-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .social-column {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
-
-  .social-column {
-    width: 90%;
-    margin: 5px auto;
+    margin-right: 10px;
     padding: 5px;
-    border: 2px solid grey;
+    border: 5px solid gold;
     border-radius: 10px;
-    /* max-width: 350px;
-    max-height: 500px; */
+    max-height: 100%;
+    max-width: 100%;
   }
-
+  
   .video-container {
-    border-radius: 10px;
+    border-radius: 2%;
     overflow: hidden;
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    color: gold;
+    text-shadow: 0 0 5px #000000;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
-
+  
+  iframe {
+    max-height: 170px;
+    max-width: 130px;
+    border: 5% solid white;
+    border-radius: 3%;
+  }
+  
+  .sport-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 2%;
+  }
+  
+  .gif {
+    border: 3px solid grey;
+    border-radius: 3px;
+    margin: 2%;
+    width: 60px;
+    height: 60px;
+  }
+  
   .sidebar {
-    width: 50%;
-    margin-top: 15%;
-    margin-left: 25%;
+    width: 25%;
+    min-height: 60%;
+    background: linear-gradient(to bottom, #8B00FF, #00FF7F);
+    justify-content: flex-end;
     padding: 10px;
-    background-color: blue;
-    order: 4;
+    margin-top: 16vh;
+    margin-right: 10vh;
+    border: 5px solid grey;
+    border-radius: 3px;
+    color: white;
   }
+  
 
   footer {
+    /* Pas de changements ici */
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:space-between;
     text-align: center;
     height: 100%;
     width: 100%;
     background: linear-gradient(to bottom, #00FF7F, #8B00FF);
     color: white;
-    margin-top: 5%;
+    margin-top: 4%;
   }
 
   .Contact {
-    font-size: 10px;
+    /* Pas de changements ici */
+    font-size: 17px;
     width: 92%;
     margin-right: 10%;
+    margin-top: -13%;
   }
 
   .notremission {
+    /* Pas de changements ici */
     margin-right: 10%;
   }
 }
-
