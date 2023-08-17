@@ -392,6 +392,18 @@ height: 26%;
     font-weight: bold;
   }
 
+  .bg-video{
+    max-height: 82%;
+    margin-top: 40%;
+    margin-bottom: 10;
+   
+     }
+
+     .videobg{
+
+      max-height: 60%;
+     }
+
   .DA{
 
     margin-left: -18%;
@@ -434,6 +446,9 @@ height: 26%;
     height: 100%; /* Pour conserver le rapport hauteur / largeur d'origine */
   }
 
+
+
+
   iframe {
 
 width: 100%;
@@ -470,7 +485,7 @@ height: 100% ;
 
     .Contact {
      
-      font-size: 10px;
+      font-size: 12px;
       width: 92% ;
       margin-right: 10%;
       margin-top: -10%;
