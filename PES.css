@@ -406,12 +406,21 @@ height: 26%;
     max-height: 81%;
     margin-top: 40%;
     margin-bottom: 10;
+    max-width: 100%;
    
      }
 
      .videobg{
 
       max-height: 60%;
+      max-width: 100%;
+     }
+
+     .obj{
+
+      margin-left: 2.5%;
+
+
      }
 
   .DA{
@@ -426,8 +435,9 @@ height: 26%;
     flex-direction: column;
     margin: 0 auto; /* Pour centrer le bloc */
     align-items: center; /* Pour centrer les éléments horizontalement */
-    max-width: 350px;
-    margin-left: 5%;
+    max-width: 100%;
+    margin-left: 3%;
+    margin-right: 2%;
     max-height: 200%;
   }
 
@@ -486,10 +496,12 @@ height: 100% ;
     text-align: center;
     /* margin: 2% 10% 0% 0%; */
     height: 100%;
-    width: 100%;
+    width: 95%;
     background: linear-gradient(to bottom, #00FF7F,#8B00FF );
     color: white;
     margin-top: 5%;
+    margin-right: 2% ;
+    margin-left: 3% ;
 
     }
 
