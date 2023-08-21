@@ -58,7 +58,7 @@ header.expanding {
 
   /* margin-right: 5%; */
   margin-left: 20%;
-  transition: height 0.2s; width: 0.2s;
+  transition: height 0.1s; width: 0.1s;
   margin-top: 1.5%;
 }
 
@@ -181,10 +181,12 @@ h1 {
 }
 
 .DA{
+font-size: 40px;
 position: relative;
 left: 10%;
 color: white;
-text-shadow: 0 0 5px #000000;
+text-shadow: 5px 5px 15px #000000;
+top: -3%;
 }
 
 
@@ -258,9 +260,9 @@ iframe{
   min-height: 60%;
   background: linear-gradient(to bottom, #8B00FF, #00FF7F);
   padding: 10px;
-  margin-top: 11.5vh;
+  margin-top: 12.8vh;
   margin-right: 5vh ;
-  border: 3px solid grey;
+  border: 5px solid grey;
   border-radius: 3px;
   color: white;
   }
@@ -282,21 +284,26 @@ iframe{
     margin-top: 1%;
     margin-left: 2%;
     margin-right: -2%;
-      border: 5px solid gold ;
+    border: 5px solid gold ;
+
+  }
 
 
+  
     
-    }
+    
+
+
 
     .notremission {
       margin-left: 10%;
       margin-top: 2%;
-      width: auto;
+      width: %;
       padding: 2% 2%;
       border: 5px solid gold;
       border-radius: 3px;
-      height: 50%;
-      margin-bottom: 20%;
+      height: 20%;
+      margin-bottom: 5%;
     
       }
   
@@ -309,7 +316,7 @@ iframe{
     padding: 2% 2%; 
     border: 5px solid gold;
     border-radius: 3px;
-    height: 70%;
+    height: 60%;
    
   }
   
@@ -345,7 +352,7 @@ height: 26%;
   }
   
   header.expanding {
-    height: 16%; /* Hauteur réduite */
+    height: 18%; /* Hauteur réduite */
   
   
   }
@@ -396,7 +403,7 @@ height: 26%;
   }
   
   nav a {
-    color: #555;
+    color: blue;
     font-size: 1em;
     text-decoration: none;
     font-weight: bold;
@@ -425,7 +432,7 @@ height: 26%;
 
   .DA{
 
-    margin-left: -18%;
+    margin-left: 8%;
 
 
   }
@@ -478,7 +485,7 @@ height: 100% ;
 
   .sidebar {
     width: 80%; /* Ajustez la largeur selon vos besoins */
-    margin-top: 160%;
+    margin-top: 140%;
     margin-bottom: 10% ;
     margin-left: 13%;
     padding: 10px;
@@ -495,7 +502,6 @@ height: 100% ;
     justify-content: space-around;
     text-align: center;
     /* margin: 2% 10% 0% 0%; */
-    height: 100%;
     width: 95%;
     background: linear-gradient(to bottom, #00FF7F,#8B00FF );
     color: white;
@@ -507,17 +513,18 @@ height: 100% ;
 
     .Contact {
      
-      font-size: 12px;
+      font-size: 9px;
       width: 92% ;
       margin-right: 10%;
       margin-top: -10%;
-      margin-bottom: 10%;
+      margin-bottom: 15%;
       
     }
 
     .notremission{
       
       margin-right: 10%;
+      margin-bottom: 20% ;
 
 }
 
@@ -581,6 +588,7 @@ height: 100% ;
   nav a {
     font-size: 1.1em;
     font-weight: bold;
+    color: #007FFF;
   }
 
   .videobg {
