@@ -91,7 +91,7 @@ nav li {
 }
 
 nav a {
-  color: #007FFF;
+  color: blue;
   font-size: 1.3em;
   text-decoration: none;
   font-weight: bold;
@@ -121,17 +121,25 @@ nav a:hover {
   position: absolute;
   top: 55%;
   left: 50%;
+  max-width: 100%;
   transform: translate(-50%, -50%);
   z-index: 98;
+  color: gold;
+
 }
 
 
 h1 {
   text-align: center;
   z-index: 100;
-  text-shadow: 0px 0px 5px hsla(125, 90%, 48%, 0.8);
+  text-shadow: 0px 0px 10px black;
   
 }
+
+.content h1 {
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
 
 .obj {
   margin-top: 2vh; 
@@ -140,7 +148,7 @@ h1 {
   margin-right: 2%;
   padding: 2vh; 
   background: linear-gradient(to bottom, #8B00FF, #00FF7F);
-  border: 8px solid gold;
+  border: 5px solid gold;
   border-radius: 10px;
 
  
@@ -149,7 +157,7 @@ h1 {
 
 .target {
   color: gold;
-  text-shadow: 0 0 5px #000000;
+  text-shadow: 0px 0px 10px black;
   text-align: center;
  
 }
@@ -205,7 +213,7 @@ top: -3%;
   align-items: center;
   margin: 10px;
   padding: 20px;
-  border: 5px solid gold;
+  border: 5px solid silver;
   border-radius: 10px;
   height: 80vh;
   width: 40vh;
@@ -270,59 +278,65 @@ iframe{
 
 
   footer {
-
-    background-color: #007FFF;
-    height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    /* margin: 2% 10% 0% 0%; */
-    height: 100%;
     width: 96%;
-    background: linear-gradient(to bottom, #00FF7F,#8B00FF );
+    background: linear-gradient(to bottom, #00FF7F, #8B00FF);
     color: white;
     margin-top: 1%;
     margin-left: 2%;
     margin-right: -2%;
-    border: 10px solid gold ;
+    border: 5px solid gold;
     border-radius: 8px;
     margin-bottom: 2%;
+  }
+
+  .horizon {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: space-around;
 
 
   }
-
-
   
-    
-    
-
-
-
-    .notremission {
-      margin-left: 10%;
-      margin-top: 2%;
-      width: %;
-      padding: 2% 2%;
-      border: 5px solid gold;
-      border-radius: 3px;
-      height: 20%;
-      margin-bottom: 5%;
-    
-      }
-  
-
-
-  .Contact {
-    margin-left: 5%;
-    margin-right: 10%;
+  .QSN {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 15px #000000;
     margin-top: 2%;
-    padding: 2% 2%; 
+  }
+  
+  
+  .notremission {
+    margin-left: 6%;
+    margin-bottom: 5%;
+    width: 40%;
+    padding: 1.20% 1.20%;
     border: 5px solid gold;
     border-radius: 3px;
-    height: 60%;
-   
+    height: 40%;
   }
+  
+  .Contact {
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 40%;
+    padding: 2.15% 2.15%;
+    border: 5px solid gold;
+    border-radius: 3px;
+    height: 40%;
+  }
+  
+  /* h3 {
+    color: gold;
+    text-align: center;
+  } */
   
   .youtube-paragraph {
     margin-bottom: 1px; 
@@ -428,6 +442,12 @@ height: 26%;
       max-width: 100%;
      }
 
+     .content h1 {
+      white-space: wrap; 
+    }
+     
+     
+     
      .obj{
 
       margin-left: 2.5%;
@@ -469,7 +489,7 @@ height: 26%;
     width: 90%; /* Ajustez la largeur selon vos besoins */
     margin: 5px auto;
     padding: 15px;
-    border: 2px solid grey;
+    border: 5px solid silver;
     border-radius: 10px;
     max-width: 350px;
     max-height: 400px;
@@ -494,7 +514,7 @@ height: 26%;
 
   .sidebar {
     width: 80%; /* Ajustez la largeur selon vos besoins */
-    margin-top: 170%;
+    margin-top: 183%;
     margin-bottom: 10% ;
     margin-left: 13%;
     padding: 10px;
@@ -519,13 +539,24 @@ height: 26%;
 
     }
 
+    .horizon {
+
+      display: flex;
+      flex-direction: column;
+      margin-top: 5%;
+      justify-content: space-around;
+  
+  
+    }
+
     .Contact {
      
       font-size: 9px;
-      width: 92% ;
-      margin-right: 10%;
+      width: 90% ;
+      margin-right: 5%;
       margin-top: -10%;
       margin-bottom: 15%;
+      margin-left: 6%;
       
     }
 
@@ -533,6 +564,7 @@ height: 26%;
       
       margin-right: 10%;
       margin-bottom: 20% ;
+      width: 90%;
 
 }
 
@@ -679,7 +711,7 @@ margin-top: 8%;
     align-items: center;
     margin-right: 25px;
     padding: 5px;
-    border: 5px solid gold;
+    border: 5px solid silver;
     border-radius: 10px;
     height: 370px;
     width: 150px;
@@ -729,7 +761,7 @@ margin-top: 8%;
     background: linear-gradient(to bottom, #8B00FF, #00FF7F);
     justify-content: center;
     padding: 10px;
-    margin-top: 18vh;
+    margin-top: 23vh;
     margin-left: 5vh;
     border: 5px solid grey;
     border-radius: 3px;
@@ -754,7 +786,7 @@ margin-top: 8%;
   .Contact {
     /* Pas de changements ici */
     font-size: 17px;
-    width: 92%;
+    width: 90%;
     margin-right: 10%;
     margin-top: -13%;
   }
@@ -762,5 +794,6 @@ margin-top: 8%;
   .notremission {
     /* Pas de changements ici */
     margin-right: 10%;
+    width: 90%;
   }
 }
