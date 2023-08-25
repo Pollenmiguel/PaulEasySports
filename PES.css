@@ -431,7 +431,7 @@ height: 26%;
     max-height: 81%;
     margin-top: 40%;
     margin-bottom: 10;
-    max-width: 100%;
+    width: 100%;
     margin-right: 0;
    
      }
@@ -439,7 +439,7 @@ height: 26%;
      .videobg{
 
       max-height: 60%;
-      max-width: 100%;
+      width: 100%;
      }
 
      .content h1 {
