@@ -95,6 +95,7 @@ nav a {
   font-size: 1.3em;
   text-decoration: none;
   font-weight: bold;
+
 }
 
 nav a:hover {
@@ -333,10 +334,12 @@ iframe{
     height: 40%;
   }
   
-  /* h3 {
+  h3 {
     color: gold;
     text-align: center;
-  } */
+    text-shadow: 0px 0px 10px black;
+
+  }
   
   .youtube-paragraph {
     margin-bottom: 1px; 
@@ -363,6 +366,7 @@ div, aside, p, section, img, ul, nav, li, main, h1, h2, .social-column, .social-
 /* Styles pour les écrans plus petits */
 @media screen and (max-width: 844px) {
   
+ 
   header {
 
 height: 26%;
@@ -452,11 +456,8 @@ height: 26%;
 
       margin-left: 2.5%;
       margin-right: 0;
-      max-width: 100%;
-
-
-
-     }
+      max-width: 95%;
+    }
 
   .DA{
 
@@ -471,7 +472,7 @@ height: 26%;
     justify-content: space-between;
     margin: 0 auto;
     align-items: center; /* Pour centrer les éléments horizontalement */
-    max-width: 100%;
+    max-width: 95%;
     margin-left: 3%;
     /* margin-right: 2%; */
     max-height: 200%;
