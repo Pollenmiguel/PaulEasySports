@@ -457,10 +457,7 @@ height: 26%;
       margin-left: 2.5%;
       margin-right: 0;
       max-width: 95%;
-
-
-
-     }
+    }
 
   .DA{
 
@@ -607,8 +604,7 @@ height: 26%;
   }
 
   nav {
-    /* Pas de changements ici */
-    flex: 1; /* Permet au menu de prendre l'espace restant */
+    flex: 1; 
     display: flex;
     justify-content: center; /* Aligner à droite */
     align-items: center;
@@ -774,7 +770,6 @@ margin-top: 8%;
   
 
   footer {
-    /* Pas de changements ici */
     max-height: 100%;
     display: flex;
     flex-direction: column;
@@ -788,7 +783,6 @@ margin-top: 8%;
   }
 
   .Contact {
-    /* Pas de changements ici */
     font-size: 17px;
     width: 90%;
     margin-right: 10%;
@@ -796,7 +790,6 @@ margin-top: 8%;
   }
 
   .notremission {
-    /* Pas de changements ici */
     margin-right: 10%;
     width: 90%;
   }
