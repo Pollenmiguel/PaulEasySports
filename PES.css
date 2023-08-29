@@ -541,20 +541,17 @@ height: 26%;
     margin-bottom: 10% ;
     margin-left: 13%;
     padding: 10px;
-    background-color: blue;
     order: 4;
   }
 
   footer {
 
-    background-color: #007FFF;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     max-width: 95%;
-    background: linear-gradient(to bottom, #00FF7F,#8B00FF );
     color: white;
     margin-top: 5%;
     /* margin-right: 2% ; */
@@ -650,7 +647,7 @@ height: 26%;
   nav a {
     font-size: 1.1em;
     font-weight: bold;
-    color: #007FFF;
+    color: blue;
   }
 
   .videobg {
@@ -694,7 +691,6 @@ margin-top: 8%;
     align-content: center;
     max-width: 1080px;
     height: 490px;
-    border: 5px solid gold;
     background-color: blueviolet;
     margin-left: 2%;
     margin-right: 2% ;
@@ -780,7 +776,6 @@ margin-top: 8%;
   .sidebar {
     max-width: 40%;
     min-height: 77%;
-    background: linear-gradient(to bottom, #8B00FF, #00FF7F);
     justify-content: center;
     padding: 10px;
     margin-top: 23vh;
@@ -798,7 +793,6 @@ margin-top: 8%;
     justify-content:space-between;
     text-align: center;
     max-width: 96%;
-    background: linear-gradient(to bottom, #00FF7F, #8B00FF);
     color: white;
     margin-top: 4%;
     margin-right: 2%;
