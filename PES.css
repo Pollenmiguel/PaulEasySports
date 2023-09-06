@@ -144,7 +144,7 @@ nav a:hover {
 
 .content {
   position: absolute;
-  top: 55%;
+  top: 65%;
   left: 50%;
   max-width: 100%;
   transform: translate(-50%, -50%);
@@ -444,8 +444,8 @@ height: 26%;
 
 
   nav li {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
   }
   
   nav a {
@@ -616,7 +616,7 @@ height: 26%;
 
   .logo {
     max-width: 95%;
-    /* Vous pouvez ajuster la marge pour centrer verticalement */
+  
     /* margin-top: 0.2em; */
   }
 
@@ -625,13 +625,12 @@ height: 26%;
   }
 
   nav {
-    flex: 1; 
     display: flex;
     justify-content: center; /* Aligner à droite */
     align-items: center;
     margin-left: 0.5rem; /* Légère marge à gauche */
-    margin-right: 2.5rem;
-    margin-top: 1.2%;
+    margin-right: 2rem;
+    margin-top: -2%;
   }
 
   nav ul {
