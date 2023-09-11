@@ -473,7 +473,7 @@ height: 24%;
 
     .content{
       /* display: flex; */
-      top: 40%;
+      top: 50%;
       text-align: center;      
       max-width: 90%;
       height:15% ;
@@ -551,7 +551,7 @@ height: 24%;
 
   .sidebar {
     width: 80%; /* Ajustez la largeur selon vos besoins */
-    margin-top: 183%;
+    margin-top: 190%;
     margin-bottom: 10% ;
     margin-left: 13%;
     padding: 10px;
