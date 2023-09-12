@@ -207,17 +207,17 @@ h1 {
 
 .presentation {
   margin-top: 5vh;
-  height: 100vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 2%;
+  margin-left: -0.5%;
 }
 
 .DA{
 font-size: 40px;
 position: relative;
-left: 10%;
+/* left: 0%; */
 color: white;
 text-shadow: 5px 5px 15px #000000;
 top: -3%;
@@ -241,7 +241,7 @@ top: -3%;
   border: 5px solid silver;
   border-radius: 10px;
   height: 80vh;
-  width: 40vh;
+  width: 38vh;
  
 
 }
@@ -473,7 +473,7 @@ height: 24%;
 
     .content{
       /* display: flex; */
-      top: 50%;
+      top: 40%;
       text-align: center;      
       max-width: 90%;
       height:15% ;
@@ -497,7 +497,8 @@ height: 24%;
 
   .DA{
 
-    margin-right: 15%;
+    margin-right: 0%;
+    text-align: center;
 
 
   }
@@ -511,7 +512,7 @@ height: 24%;
     max-width: 95%;
     margin-left: 3%;
     /* margin-right: 2%; */
-    max-height: 200%;
+    height: 185vh;
   }
 
   .social-container {
@@ -549,14 +550,15 @@ height: 24%;
   }
 
 
-  .sidebar {
-    width: 80%; /* Ajustez la largeur selon vos besoins */
-    margin-top: 190%;
+  /* .sidebar {
+    max-height: 15%;
+    width: 80%; 
+    margin-top: 150%;
     margin-bottom: 10% ;
     margin-left: 13%;
     padding: 10px;
-    order: 4;
-  }
+    
+  } */
 
   footer {
 
@@ -745,7 +747,7 @@ margin-top: 8%;
     border: 5px solid silver;
     border-radius: 10px;
     height: 370px;
-    width: 150px;
+    width: 200px;
   }
   
   .video-container {
