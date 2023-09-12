@@ -512,7 +512,7 @@ height: 24%;
     max-width: 95%;
     margin-left: 3%;
     /* margin-right: 2%; */
-    height: 198vh;
+    height: 245vh;
   }
 
   .social-container {
@@ -548,10 +548,10 @@ height: 24%;
   width: 100%;
   height: 100% ;
   }
+/* 
 
-
-  /* .sidebar {
-    max-height: 15%;
+  .sidebar {
+    max-height: 25%;
     width: 80%; 
     margin-top: 150%;
     margin-bottom: 10% ;
