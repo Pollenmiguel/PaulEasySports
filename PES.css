@@ -232,6 +232,15 @@ top: -3%;
   margin-right: 10px; */
 }
 
+
+#sci {
+
+width: 38vh;
+
+
+
+}
+
 .social-column {
   display: flex;
   flex-direction: column;
@@ -240,8 +249,8 @@ top: -3%;
   padding: 20px;
   border: 5px solid silver;
   border-radius: 10px;
-  height: 80vh;
-  width: 38vh;
+  height: 85vh;
+  width: 51.5vh;
  
 
 }
@@ -557,17 +566,22 @@ height: 250vh;
   width: 100%;
   height: 100% ;
   }
-/* 
 
-  .sidebar {
-    max-height: 25%;
-    width: 80%; 
-    margin-top: 150%;
-    margin-bottom: 10% ;
-    margin-left: 13%;
-    padding: 10px;
-    
+  
+/* .sidebar {
+ 
+  footer {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+    max-width: 96%;
+    color: white;
+    margin-top: 4%;
+    margin-right: 2%;
   } */
+
 
   footer {
 
@@ -714,7 +728,7 @@ margin-top: 8%;
     align-items: flex-start;
     align-content: center;
     max-width: 1080px;
-    height: 490px;
+    max-height: 500px;
     background-color: blueviolet;
     margin-left: 2%;
     margin-right: 2% ;
@@ -740,7 +754,7 @@ margin-top: 8%;
   
   .social-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     align-items: flex-start;
     max-width: 100%;
@@ -750,13 +764,14 @@ margin-top: 8%;
   .social-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-right: 25px;
-    padding: 5px;
+    /* justify-content: center; */
+    margin-left: 4vh ;
+    margin-right: 4vh;
+    padding: 10px;
     border: 5px solid silver;
     border-radius: 10px;
-    height: 370px;
-    width: 200px;
+    max-height: 90vh;
+    max-width: 90vh;
   }
   
   .video-container {
@@ -797,7 +812,7 @@ margin-top: 8%;
     height: 60px;
   }
   
-  .sidebar {
+  /* .sidebar {
     max-width: 40%;
     min-height: 77%;
     justify-content: center;
@@ -807,7 +822,7 @@ margin-top: 8%;
     border: 5px solid grey;
     border-radius: 3px;
     color: white;
-  }
+  } */
   
 
   footer {
