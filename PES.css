@@ -185,7 +185,7 @@ h1 {
   color: gold;
   text-shadow: 0px 0px 10px black;
   text-align: center;
-  font-size: 40px; 
+  font-size: 30px; 
   font-family: 'Montserrat', sans-serif;
  
 }
@@ -506,6 +506,15 @@ height: 24%;
       margin-left: 2.5%;
       margin-right: 0;
       max-width: 95%;
+    }
+
+    .target {
+      color: gold;
+      text-shadow: 0px 0px 10px black;
+      text-align: center;
+      font-size: 18px; 
+      font-family: 'Montserrat', sans-serif;
+     
     }
 
   .DA{
