@@ -157,12 +157,14 @@ nav a:hover {
 h1 {
   text-align: center;
   z-index: 100;
+  font-size: 25px;
   text-shadow: 0px 0px 10px black;
   
 }
 
 .content h1 {
   white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  font-size: 25px;
 }
 
 
@@ -484,6 +486,7 @@ height: 24%;
       max-width: 100%;
      }
 
+
     .content{
       /* display: flex; */
       top: 40%;
@@ -495,9 +498,9 @@ height: 24%;
 
       .content h1{
 
-        font-size: 100%;
-
-      }
+        font-size: 8px;
+        
+  }
     
      
      
