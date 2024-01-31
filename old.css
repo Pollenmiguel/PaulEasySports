@@ -1,0 +1,469 @@
+@media screen and (max-width: 844px) {
+  
+ 
+    header {
+  
+  height: 24%;
+  
+    }
+    
+    header.expanding {
+      height: 16%; /* Hauteur réduite */
+    
+    
+    }
+  
+    
+    
+    .container {
+      display: flex;
+      flex-direction: column; 
+      text-align: center; 
+      align-items: center;
+  
+    }
+  
+    .logo {
+      margin-left: 0; 
+      /* margin-bottom: 0.1em;  */
+      width: 85%;
+      margin-top: 0.2em;
+    }
+  
+    .logo.expanding {
+      width: 55%;
+    }
+  
+  
+    /* #audio-player {
+      width: 100%; 
+      bottom: 0; 
+      left: 0; 
+    } */
+  
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-right: 5%;
+      margin-left: 5%;
+      margin-top: -2%;
+      /* padding: 5px; */
+    }
+    
+  
+  
+    nav li {
+      margin-left: 0.4em;
+      margin-right: 0.4em;
+    }
+    
+    nav a {
+      color: blueviolet;
+      font-size: 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    .bg-video{
+      max-height: 81%;
+      margin-top: 44%;
+      margin-bottom: 10;
+      max-width: 100%;
+      margin-right: 0;
+     
+       }
+  
+       .videobg{
+  
+        max-height: 60%;
+        max-width: 100%;
+       }
+  
+  
+      .content{
+        /* display: flex; */
+        top: 40%;
+        text-align: center;      
+        max-width: 90%;
+        height:15% ;
+  
+        }
+  
+        .content h1{
+  
+          font-size: 8px;
+          
+    }
+      
+       
+       
+       .obj{
+  
+        margin-left: 2.5%;
+        margin-right: 0;
+        max-width: 95%;
+      }
+  
+      .target {
+        color: gold;
+        text-shadow: 0px 0px 10px black;
+        text-align: center;
+        font-size: 18px; 
+        font-family: 'Montserrat', sans-serif;
+       
+      }
+  
+    .DA{
+  
+      margin-right: 0%;
+      text-align: center;
+  
+  
+    }
+  
+    .container-main-sidebar {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0 auto;
+      align-items: center; /* Pour centrer les éléments horizontalement */
+      max-width: 95%;
+      margin-left: 3%;
+      /* margin-right: 2%; */
+      height: 195vh;
+    }
+  
+   #cms{
+  
+  height: 250vh;
+  
+  
+  
+   }
+  
+  
+    .social-container {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 350px;
+    }
+  
+    .social-column {
+      width: 90%; /* Ajustez la largeur selon vos besoins */
+      margin: 5px auto;
+      padding: 15px;
+      border: 5px solid silver;
+      border-radius: 10px;
+      max-width: 350px;
+      max-height: 400px;
+    }
+  
+    .video-container {
+      border-radius: 10px; 
+      overflow: hidden; 
+      width: 100%; /* Ajustez la largeur selon vos besoins */
+      height: 100%; /* Pour conserver le rapport hauteur / largeur d'origine */
+    }
+  
+  
+  
+  
+    iframe {
+  
+    width: 100%;
+    height: 100% ;
+    }
+  
+    
+  /* .sidebar {
+   
+    footer {
+      max-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      text-align: center;
+      max-width: 96%;
+      color: white;
+      margin-top: 4%;
+      margin-right: 2%;
+    } */
+  
+  
+    footer {
+  
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      max-width: 95%;
+      color: white;
+      margin-top: 5%;
+      /* margin-right: 2% ; */
+      margin-left: 3% ;
+  
+      }
+  
+      .horizon {
+  
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        justify-content: space-around;
+    
+    
+      }
+  
+      .Contact {
+       
+        font-size: 9px;
+        width: 90% ;
+        margin-right: 5%;
+        margin-top: -10%;
+        margin-bottom: 15%;
+        margin-left: 6%;
+        
+      }
+  
+      .notremission{
+        
+        margin-right: 10%;
+        margin-bottom: 20% ;
+        width: 90%;
+  
+  }
+  
+  }
+  
+  
+  @media screen and (max-width: 844px) and (orientation: landscape) {
+    header {
+      height: 40%;
+      position: fixed;
+      top:0%
+     
+    }
+    
+    header.expanding {
+      height: 25%;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: row; /* Ajout de flex-direction pour empiler les blocs */
+      /* justify-content: space-between;  */
+      align-items: center;
+      width: 100vw;
+      padding: 1rem; /* Ajout de marges à gauche et à droite */
+    }
+  
+    .logo {
+      max-width: 95%;
+    
+      /* margin-top: 0.2em; */
+    }
+  
+    .logo.expanding {
+      max-width: 70%;
+    }
+  
+    nav {
+      display: flex;
+      justify-content: center; /* Aligner à droite */
+      align-items: center;
+      margin-left: 0.5rem; /* Légère marge à gauche */
+      margin-right: 2rem;
+      margin-top: -2%;
+    }
+  
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav li {
+      margin-left: 0.3em;
+      margin-right: 0.3em;
+    }
+  
+    nav a {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: blueviolet;
+    }
+  
+    .videobg {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      /* margin-bottom: -70%; */
+      /* margin-top: 5%; */
+    }
+  
+    .bg-video {
+  
+  margin-top: 8%;
+  
+    }
+  
+  
+    .content h1{
+  
+      font-size: 15px;
+      
+  }
+  
+  
+    iframe{
+  
+      height: 150%;
+      width: 100%;
+      border: 5% solid white;
+      border-radius: 3%;
+    }
+  
+  
+  
+    .content {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 98;
+      margin-top: 20%;
+    }
+  
+    .container-main-sidebar {
+      display: flex;
+      flex-direction: row; 
+      justify-content: space-between;
+      align-items: flex-start;
+      align-content: center;
+      max-width: 1080px;
+      max-height: 500px;
+      background-color: blueviolet;
+      margin-left: 2%;
+      margin-right: 2% ;
+      margin-top: 2%;
+    }
+    
+    .presentation {
+      margin-top: 2vh;
+      max-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+    }
+    
+    .DA {
+      position: relative;
+      /* left: 10%; */
+      color: white;
+      text-shadow: 0 0 5px #000000;
+      padding: 2%;
+    }
+    
+    .social-container {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: flex-start;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    
+    .social-column {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      margin-left: 4vh ;
+      margin-right: 4vh;
+      padding: 10px;
+      border: 5px solid silver;
+      border-radius: 10px;
+      max-height: 90vh;
+      max-width: 90vh;
+    }
+    
+    .video-container {
+      border-radius: 2%;
+      overflow: hidden;
+      max-width: 1050px;
+      max-height: 550px;
+      text-align: center;
+      color: gold;
+      text-shadow: 0 0 5px #000000;
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+    
+    iframe {
+      max-height: 100%;
+      max-width: 550px;
+      border: 5% solid white;
+      border-radius: 3%;
+      /* margin-top: 2%; */
+    }
+    
+    .sport-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      max-height: 100%;
+      max-width: 100%;
+      margin-top: 2%;
+    }
+    
+    .gif {
+      border: 3px solid grey;
+      border-radius: 3px;
+      margin: 2%;
+      width: 60px;
+      height: 60px;
+    }
+    
+    /* .sidebar {
+      max-width: 40%;
+      min-height: 77%;
+      justify-content: center;
+      padding: 10px;
+      margin-top: 23vh;
+      margin-left: 5vh;
+      border: 5px solid grey;
+      border-radius: 3px;
+      color: white;
+    } */
+    
+  
+    footer {
+      max-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      text-align: center;
+      max-width: 96%;
+      color: white;
+      margin-top: 4%;
+      margin-right: 2%;
+    }
+  
+    .Contact {
+      font-size: 17px;
+      width: 90%;
+      margin-right: 10%;
+      margin-top: -13%;
+    }
+  
+    .notremission {
+      margin-right: 10%;
+      width: 90%;
+    }
+  }
